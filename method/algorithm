@@ -1,0 +1,11 @@
+Step 1: Create a function whose work is to check whether the grid is safe or not when a number is assigned to the current index. For the boxes, column, and row, create a HashMap for storing the frequency of the numbers.
+
+If the HashMap shows the frequency of any number greater than 1, then return false, else return true. Instead of HashMap, one can use loops also.
+
+Step 2: Write a recursive function that accepts the grid as the input.
+
+Step 3: Look for the unassigned location in the grid. If the unassigned location is present, then assign a number from 1 to 9, check if the number that is assigned to the current index makes the grid safe or not
+
+If the grid is safe, then recursively invoke the method for all the safe cases from 1 to 9. if any of the recursive calls return true, then terminate the loop by returning true. If there is no recursive call that returns true, then return false.
+
+Step 4: If the total number of unassigned locations in the grid is zero, then return true.
